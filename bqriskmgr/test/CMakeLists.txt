@@ -60,4 +60,6 @@ target_link_libraries(${TEST_PROJECT_NAME}
     libgmock.a
     dl
     pthread
+    z
+    zstd
     )

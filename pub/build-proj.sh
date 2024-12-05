@@ -3,7 +3,7 @@ set -u
 set -e
 
 readonly PARALLEL_COMPILE_THREAD_NUM=6
-readonly SOLUTION_ROOT_DIR=/mnt/storage/work/betterquant2
+readonly SOLUTION_ROOT_DIR=/app/bravequant
 
 readonly PROJ_NAME=$(pwd | awk -F'/' '{print $NF}')
 readonly FILE_OF_CPP="\.cpp$\|\.cc$\|\.hpp$\|\.h$"
@@ -30,7 +30,7 @@ build() {
   mkdir -p build/$1 || exit 1
   cd build/$1
 
-  cmake ../../ -DCMAKE_BUILD_TYPE=$build_type \
+  cmake ../../ -DCMAKE_VERBOSE_MAKEFILE=ON -DCMAKE_BUILD_TYPE=$build_type \
     -DSOLUTION_ROOT_DIR:STRING=${SOLUTION_ROOT_DIR} || (cd - && exit 1)
 
   if [[ $# -gt 1 ]]; then

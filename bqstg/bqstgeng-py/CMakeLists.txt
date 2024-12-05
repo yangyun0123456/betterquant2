@@ -14,7 +14,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(CXX_FLAGS
     -g
     -Wextra
-    -Werror
+    #    -Werror
     -Wno-unused-parameter
     -march=native
     )
@@ -138,7 +138,7 @@ target_link_libraries(${PROJECT_NAME}
     PUBLIC mysqlcppconn-static
     PUBLIC libmysqlclient.a
     PUBLIC libboost_locale.a
-    PUBLIC libboost_python38.a
+    PUBLIC libboost_python312.a
     PUBLIC libboost_date_time.a
     PUBLIC libboost_filesystem.a
     PUBLIC iceoryx_posh

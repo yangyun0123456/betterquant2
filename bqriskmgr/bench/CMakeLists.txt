@@ -58,4 +58,6 @@ target_link_libraries(${BENCH_PROJECT_NAME}
     libbenchmark.a
     dl
     pthread
+    z
+    zstd
     )

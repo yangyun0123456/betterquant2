@@ -20,5 +20,5 @@ chmod +x /usr/local/bin/docker-compose
 
 # taos
 sudo apt install build-essential libjansson-dev libsnappy-dev liblzma-dev libz-dev zlib1g pkg-config
-git clone https://github.com/taosdata/TDengine.git /tmp
-cd /tmp/TDengine && ./build.sh && cd -
+cd /app && git clone https://github.com/taosdata/TDengine.git
+cd /app/TDengine && ./build.sh && cd -

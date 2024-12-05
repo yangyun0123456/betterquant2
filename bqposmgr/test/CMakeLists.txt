@@ -124,4 +124,6 @@ target_link_libraries(${TEST_PROJECT_NAME}
     ssl
     crypto
     rt
+    z
+    zstd
     )

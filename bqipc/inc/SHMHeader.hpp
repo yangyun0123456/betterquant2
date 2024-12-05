@@ -10,6 +10,8 @@
 
 #pragma once
 
+#include <cstring>
+
 #include "SHMIPCConst.hpp"
 #include "SHMIPCDef.hpp"
 #include "SHMIPCMsgId.hpp"

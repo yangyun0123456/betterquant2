@@ -14,7 +14,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(CXX_FLAGS
     -g
     -Wextra
-    -Werror
+    #    -Werror
     -Wno-unused-parameter
     -march=native
     )

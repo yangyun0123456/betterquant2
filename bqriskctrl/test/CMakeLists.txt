@@ -115,4 +115,6 @@ target_link_libraries(${TEST_PROJECT_NAME}
     dl
     pthread
     rt
+    z
+    zstd
     )

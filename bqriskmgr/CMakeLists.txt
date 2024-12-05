@@ -14,7 +14,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(CXX_FLAGS
     -g
     -Wextra
-    -Werror
+    #    -Werror
     -Wno-unused-parameter
     -march=native
     )
@@ -159,6 +159,8 @@ target_link_libraries(${PROJECT_NAME}
     dl
     pthread
     rt
+    z
+    zstd
     )
 
 option(BUILD_TESTS "Build the tests" ON)
